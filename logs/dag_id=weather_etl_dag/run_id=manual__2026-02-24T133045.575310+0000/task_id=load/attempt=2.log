@@ -1,0 +1,16 @@
+{"timestamp":"2026-02-24T13:36:01.971145Z","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2026-02-24T13:36:01.974301Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/weather_dag.py","logger":"airflow.models.dagbag.BundleDagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2026-02-24T13:36:02.054081Z","level":"info","event":"Criando engine","logger":"root","filename":"load_data.py","lineno":24}
+{"timestamp":"2026-02-24T13:36:02.077833Z","level":"warning","event":"The `airflow.decorators.dag` attribute is deprecated. Please use `'airflow.sdk.dag'`.","category":"DeprecatedImportWarning","filename":"/opt/airflow/dags/weather_dag.py","lineno":2,"logger":"py.warnings"}
+{"timestamp":"2026-02-24T13:36:02.078193Z","level":"warning","event":"The `airflow.decorators.task` attribute is deprecated. Please use `'airflow.sdk.task'`.","category":"DeprecatedImportWarning","filename":"/opt/airflow/dags/weather_dag.py","lineno":2,"logger":"py.warnings"}
+{"timestamp":"2026-02-24T13:36:02.123373Z","level":"info","event":"Task instance is in running state","logger":"task.stdout"}
+{"timestamp":"2026-02-24T13:36:02.123965Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","logger":"task.stdout"}
+{"timestamp":"2026-02-24T13:36:02.124624Z","level":"info","event":"Current task name:load","logger":"task.stdout"}
+{"timestamp":"2026-02-24T13:36:02.125237Z","level":"info","event":"Dag name:weather_etl_dag","logger":"task.stdout"}
+{"timestamp":"2026-02-24T13:36:02.184328Z","level":"info","event":"Carregando dados para a tabela weather_data_recife","logger":"root","filename":"load_data.py","lineno":30}
+{"timestamp":"2026-02-24T13:36:02.351501Z","level":"info","event":"Dados carregados com sucesso para a tabela weather_data_recife","logger":"root","filename":"load_data.py","lineno":32}
+{"timestamp":"2026-02-24T13:36:02.443097Z","level":"info","event":"Dados carregados na tabela weather_data_recife:\n       base  visibility  ... weather_main  weather_description\n0  stations       10000  ...       Clouds        broken clouds\n1  stations        9000  ...         Rain           light rain\n2  stations        9000  ...         Rain           light rain\n3  stations        9000  ...         Rain           light rain\n\n[4 rows x 27 columns]","logger":"root","filename":"load_data.py","lineno":35}
+{"timestamp":"2026-02-24T13:36:02.444821Z","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.decorators.python._PythonDecoratedOperator","filename":"python.py","lineno":230}
+{"timestamp":"2026-02-24T13:36:02.495377Z","level":"info","event":"Task instance in success state","logger":"task.stdout"}
+{"timestamp":"2026-02-24T13:36:02.496171Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","logger":"task.stdout"}
+{"timestamp":"2026-02-24T13:36:02.497622Z","level":"info","event":"Task operator:<Task(_PythonDecoratedOperator): load>","logger":"task.stdout"}
